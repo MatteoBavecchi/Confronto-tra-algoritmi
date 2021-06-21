@@ -11,15 +11,16 @@ Progetto di Intelligenza Artificiale che confronta i tre algoritmi **Naive Bayes
     3. Installare la libreria numpy `conda install -c conda-forge numpy`
     4. Installare la libreria Seaborn `conda install -c conda-forge numpy`
 
-## Usage
+## Datasets
 
-```python
-import foobar
+I datasets sono reperibili da questi link:
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
+* [Nursery](https://www.openml.org/d/1568)
+* [Letter](https://www.openml.org/d/977)
+* [Ozone](https://www.kaggle.com/prashant111/ozone-level-detection) (File `eighthr.data.csv`)
+* [Waveform](https://www.openml.org/d/60)
+* [PageBlocks](https://datahub.io/machine-learning/page-blocks)
+* [Wine quality (white)](https://www.openml.org/d/40498)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
