@@ -1,13 +1,11 @@
 import numpy as np
 import pandas as pd 
 
-import seaborn as sns
 from numpy import mean
 
 from sklearn.model_selection import train_test_split
-from sklearn.model_selection import KFold, RepeatedKFold
+from sklearn.model_selection import RepeatedKFold
 from sklearn.preprocessing import StandardScaler, LabelEncoder
-from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
 
 from sklearn.naive_bayes import GaussianNB
