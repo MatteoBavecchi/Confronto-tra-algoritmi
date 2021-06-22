@@ -16,14 +16,12 @@ y_test = y[divider:r_length]
 
 
 models = get_models()
-names = []
 for name, model in models:
-    total=[]
+    total = []
     for index in range(15):
         y_pred = model.fit(X_train, y_train).predict(X_test)
-        acc =  metrics.accuracy_score(y_test,y_pred)
-        names.append(name)
+        acc = metrics.accuracy_score(y_test, y_pred)
         total.append(acc)
-        print('[%f] %s: %f' % (index, name, acc*100)) 
     nptotal = np.asarray(total)
-    print('\n[Media]%s: %f +-%f\n' % (name, nptotal.mean()*100, nptotal.std()*100))
+    print('\n[Media]%s: %f +-%f\n' %
+          (name, nptotal.mean()*100, nptotal.std()*100))
