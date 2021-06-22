@@ -28,7 +28,7 @@ Tra i 6 datasets utilizzati, 5 sono stati divisi con la tecnica **k-fold cross v
 
 * `kfold.py` - Datasets nursery, ozone, waveform, pageblocks e wine quality
 * `letters.py` - Dataset letters
-* `config.py` - Contiene le funzioni dei classifier
+* `config.py` - Contiene le funzioni per stimare lo score dei classifiers
 
 
 ## Fonti utilizzate

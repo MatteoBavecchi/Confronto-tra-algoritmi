@@ -3,7 +3,7 @@ import pandas as pd
 from numpy import mean
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 
-from config import execute_test, execute_test_new
+from config import execute_test
 
 lb_en = LabelEncoder()
 sc = StandardScaler()
