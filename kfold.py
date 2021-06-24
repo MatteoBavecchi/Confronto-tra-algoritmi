@@ -35,17 +35,24 @@ execute_test(X, y)
 data = pd.read_csv('datasets/ozone.csv', header=None)
 df = pd.DataFrame(data)
 df = df.drop([0], axis=1)
-# si sostituisce gli ? con nan
+
+# si sostituisce gli ? con NaN
 for i in df.columns:
     df[i] = df[i].replace(['?'], np.nan)
+
+#si converte in float i valori, che sono string
 for i in df.columns[:-1]:
     df[i] = df[i].astype(str).astype(float)
+
+
+#si riempie i posti con il valore NaN con la media della colonna
 null_col = []
 for i in df.columns:
     if df[i].isna().mean()*100 > 0:
         null_col.append(i)
 for i in null_col:
     df[i] = df[i].fillna(df[i].mean())
+
 X = df.drop([73], axis=1)
 y = df[73]
 X = pd.DataFrame(sc.fit_transform(X), columns=X.columns)
